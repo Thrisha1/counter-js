@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    
+    <title>Counter</title>
+</head>
+<br>
+    <div class="container">
+        <button onclick="increment()">+</button>  
+        <h2 id ="count"></h2>
+        <button onclick="decrement()">-</button>
+    </div>
+
+
+
+    
+    <script >
+
+            var data = 0;
+            
+            
+            document.getElementById("count").innerText = data;
+                
+            
+            function increment() {
+                data = data + 1;
+                document.getElementById("count").innerText = data;
+            }
+            
+            function decrement() {
+                data = data - 1;
+                document.getElementById("count").innerText = data;
+            }
+    </script>
+</body>
+</html>
